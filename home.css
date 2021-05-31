@@ -1,0 +1,58 @@
+body{
+    margin: 0;
+    background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
+    background-blend-mode: multiply,multiply;
+    overflow-y: hidden;
+    /* background-color: green; */
+
+}
+.night{
+    height: 80vh;
+    width: 300vh;
+    border: 1px solid black;
+    margin: 5rem auto;
+background: url("./images/img2.jpg");
+background-size: cover;
+box-shadow: 1px 2px 60px rgba red green;
+overflow-x: hidden;
+}
+.surface{
+    height: 140px;
+    width: 500px;
+    background: url();
+    display: block;
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+  background-repeat: repeat-x;
+    animation: backwards;
+    animation:moveRight 6s linear
+}
+.car{
+    position:absolute;
+    bottom:8%;
+    left: 24%;
+    animation: suspension 1s linear;
+    
+}
+/* animation */
+@keyframes moveRight{
+    100%
+    {
+        transform:translateX(-29)}
+    }
+@keyframes suspension{
+    100%{
+transform:translateY(-1px)
+}
+50%{
+    transform: translateY(2px);}
+0%{
+    transform: translateY(-1%);}
+}
+.moveRight{
+animation: moveRight 6s linear infinite;
+}
+.suspension{
+    animation:  suspension 1s linear infinite;
+}
